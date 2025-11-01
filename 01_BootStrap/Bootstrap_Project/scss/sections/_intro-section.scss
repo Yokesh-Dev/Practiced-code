@@ -1,0 +1,46 @@
+@use '../custom' as *;
+@use'../components/mixins' as *;
+
+.intro-section {
+    @include gradient;
+    padding:10rem  0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+#getIN {
+       padding: 20px 20px 20px 20px;
+}
+
+.intros {
+
+    .video-box {
+        position:relative;
+
+        a {
+            @include absoluteCenter;
+            position: absolute;
+
+            span {
+               
+                i {
+                    font-size: 6rem;
+                     color: $black;
+                     display: block;
+                     margin-left: auto;
+                     margin-right: auto;
+                     width: 40%;
+                }
+            }
+        }
+    }
+}
+//ANIMATION CANT ABLE TO FIGURE IT OUT 
+.border-animation {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin: 0;
+}
